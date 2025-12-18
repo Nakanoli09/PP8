@@ -7,7 +7,7 @@
   min-height: 460px;
   width: 420px;
   border-radius: 12px;
-  background-image: url(/img/popover__back.jpg);
+  background-image: url(./../../../img/popover__back.jpg);
   background-size: cover;
 }
 
