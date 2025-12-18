@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stoks</title>
-    <link rel="stylesheet" href="./../css/reset.css">
-    <link rel="stylesheet" href="./../css/font.css">
-    <link rel="stylesheet" href="./../sass/css/css_home/header.css">
-    <link rel="stylesheet" href="./../sass/css/css_stocks/special.css">
-    <link rel="stylesheet" href="./../sass/css/css_stocks/stocks.css">
-    <link rel="stylesheet" href="./../sass/css/css_stocks/stocks.css">
-    <link rel="stylesheet" href="./../sass/css/css_home/footer.css">   
-    <link rel="stylesheet" href="./../sass/css/css_home/popover_entrance.css">
-    <link rel="stylesheet" href="./../sass/css/css_home/popover_reg.css">
+    <title>Home</title>
+    <link rel="stylesheet"  href="./../css/font.css">
+    <link rel="stylesheet"  href="./../css/reset.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/header.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/repairing.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/special.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/footer.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/popover_entrance.css">
+    <link rel="stylesheet"  href="./../sass/css/css_home/popover_reg.css">
 </head>
 <body>
     <header class="header">
@@ -33,32 +32,102 @@
     </header>
 <!-- Основной контент страницы/Main page content -->
     <main class="main">
+        <section class="repairing">
+            <div class="repairing__title">
+                <h1 class="title">МЫ РЕМОНТИРУЕМ</h1>
+            </div>
+            <div class="repairing__cards">
+                <div class="repairing__card">
+                    <div class="card-element">
+                        <div class="card__image">
+                            <a href="services.html"><img src="/img/card__image__one.png" alt="phone" loading="lazy" class="image"></a>
+                        </div>
+                        <div class="card__name">
+                            <h3 class="name">телефоны</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-element">
+                        <div class="card__image">
+                            <a href="services.html"><img src="/img/card__image__two.png" alt="pc" loading="lazy" class="image"></a>
+                        </div>
+                        <div class="card__name">
+                            <h3 class="name">компьютеры</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-element">
+                        <div class="card__image">
+                            <a href="services.html"><img src="/img/card__image__three.png" alt="navigation" loading="lazy" class="image"></a>
+                        </div>
+                        <div class="card__name">
+                            <h3 class="name">навигаторы</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="repairing__button">
+                    <button onclick="location.href='services.html'"  class="repairing__button-element">другие устройства</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stocks">
+            <div class="stocks__name">
+                <h2 class="name">НАШИ АКЦИИ</h2>
+            </div>
+            <div class="stocks__cards">
+                <div class="stocks__card">
+                    <div class="card-element">
+                        <div class="card__image">
+                            <a href="services.html"><img src="/img/stocks__card__one.jpg" alt="stocks" loading="lazy" class="images"></a>
+                        </div>
+                        <div class="card__name">
+                            <h3 class="name curle">бесплатная замена стекла</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-element" id="culse">
+                        <div class="card__image">
+                            <img src="/img/stocks__card__two.jpg" alt="stocks" loading="lazy" class="images">
+                        </div>
+                        <div class="card__name curl">
+                            <h3 class="name">установка защитной плёнки</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-element" id="ide">
+                        <div class="card__image">
+                            <a href="services.html"><img src="/img/stocks__card__three.png" alt="stocks" loading="lazy" class="images"></a>
+                        </div>
+                        <div class="card__name">
+                            <h3 class="name">скидка на ремонт телефона</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="stocks__button">
+                    <button onclick="location.href='stoks.html'"  class="stocks__button-element">все акции</button>
+                </div>
+            </div>
+        </section>
+
         <section class="special">
             <div class="special__title">
-                <h1 class="title">СПЕЦПРЕДЛОЖЕНИЕ</h1>
-            </div>
-            <div class="special__dif">
-                <h3 class="special__dif-element">БЕСПЛАТНАЯ ДИАГНОСТИКА!</h3>
+                <h2 class="title">
+                    СПЕЦПРЕДЛОЖЕНИЕ
+                </h2>
             </div>
             <div class="special__image">
                 <img src="/img/stoks__image.png" alt="special__offer" loading="lazy" class="special__offer">
             </div>
-            <div class="stoks__description">
-                <p class="stoks__description-element">Для того чтобы принять участие необходимо подписаться на одну из наших соц.сетей ниже!</p>
+            <div class="special__description">
+                <p class="special__description-element">Участвуйте в  розыгрышe, чтобы получить шанс выиграть бесплатный ремонт стекла и установку защитной плёнки!</p>
             </div>
-            <div class="socital__network">
-                <div class="network">
-                     <a href="https://vk.com/posadservice"><img src="/img/vk.svg" alt="vk" loading="lazy" class="network_vk"></a>
-                    <p class="network__name">VKontakte</p>
-                </div>
-                <div class="network">
-                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fposadservice%2F&is_from_rle"><img src="/img/inst.svg" alt="vk" loading="lazy" class="network_inst"></a>
-                    <p class="network__name">instagram</p>
-                </div>
+            <div class="special__button">
+                <button onclick="location.href='stoks.html'" class="special__button-element">участвовать</button>
             </div>
         </section>
     </main>
-    <!-- Подвал/footer -->
+<!-- Подвал/footer -->
     <footer class="footer">
         <div class="footer__details">
             <div class="footer__details-element">
@@ -85,7 +154,7 @@
         </div>
     </footer>
 
-    <!-- Поповер регистрации/Registration popover -->
+<!-- Поповер регистрации/Registration popover -->
     <div id="popover_reg" popover>
         <div class="popover">
             <div class="back">
@@ -99,10 +168,10 @@
             </div>
             <form id="popover__forms">
                 <label for="email">
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="email" name="user_email" id="email" placeholder="E-mail" required>
                 </label>
                 <label for="password">
-                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <input type="password" name="user_password" id="password" placeholder="password" required>
                 </label>
                 <div class="popover__buttone">
                     <button type="submit" class="popover__button-element">Создать</button>
