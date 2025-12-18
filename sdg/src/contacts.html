@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connection</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/sass/css/css_home/header.css">
+    <link rel="stylesheet" href="/sass/css/css_connect/connection.css">
+    <link rel="stylesheet" href="/sass/css/css_home/footer.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/img/logo.png" alt="logo" class="header__logo">
+        <div class="header__nav">
+             <nav class="header__list__container"> <!--Навигация в шапке/Header navigation -->
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="header__link" href="home.html">Главная</a></li>
+                    <li class="header__list-item"><a class="header__link" href="services.html">Услуги</a></li>
+                    <li class="header__list-item"><a class="header__link" href="about.html">О нас</a></li>
+                    <li class="header__list-item"><a class="header__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__button">
+            <button class="header__button-element" popovertarget="popover_reg">войти</button>
+        </div>
+    </header>
+<!-- Основной контент страницы/Main page content -->
+    <main class="main">
+        <section class="connection">
+            <div class="connection__description">
+                <p class="connection__description-element">для получения более точной информации по ремонту или акциям, вы можете позвонить нам по нашему номеру телефона, а так же можете отправить нам письмо на почту cнизу!</p>
+            </div>
+            <div class="form__connection">
+                <div class="connection__title">
+                    <h1 class="connection__title-element">ВЫ МОЖЕТЕ СВЯЗАТЬСЯ С НАМИ!</h1>
+                </div>
+                <form id="form">
+                    <label for="username">
+                        <input type="text" class="us" name="username" id="username" placeholder="Ваше имя" required maxlength='15'>
+                        <div id="error_username"></div>
+                    </label>
+                    <label for="email">
+                        <input type="email" class="us" name="email" id="email" placeholder="Ваш e-mail" required>
+                        <div id="error_email"></div>
+                    </label>
+                    <label for="message">
+                        <input type="text" class="us" name="message" id="message" placeholder="Ваше сообщение" required maxlength='120'>
+                    </label>
+                    <div class="form__button">
+                        <button type="submit" class="form__button-element">отправить</button>
+                    </div>
+                </form>
+                <script src="/js/message.js"></script>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Подвал/footer -->
+    <footer class="footer">
+        <div class="footer__details">
+            <div class="footer__details-element">
+                <p class="details-element">© 2025 ООО "Спецсервис".<br>Все права защищены.</p>
+            </div>
+            <div class="footer__nav">
+                <nav> <!--Навигация в подвале/Basement navigation-->
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="about.html" id="footer__list-titles">О компании</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">Что ремонтируем</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="contacts.html">Где находимся</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="about.html">Правила сайта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="services.html" id="footer__list-title">Продукция</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">замена стёкл</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">чистка от воды</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">ремонт запчастей</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

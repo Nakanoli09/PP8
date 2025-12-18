@@ -1,0 +1,68 @@
+:root {
+  --font-family:'Montserrat';
+  --medium:400;
+  --semiBold:600;
+  --font-size-24:24px;
+  --font-size-32:32px;
+}
+
+.main {
+  margin-top: 169px;
+  font-family: var(--font-family);
+}
+
+.about__title {
+  font-weight: var(--semiBold);
+  font-size: var(--font-size-32);
+  display: flex;
+  justify-content: center;
+  height: 39px;
+  padding-top: 4px;
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  margin-top: 142px;
+}
+
+.achievements__card {
+  width: 306px;
+  min-height: 371px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+.achievements__card-image {
+  display: flex;
+  justify-content: center;
+}
+
+.achievements__card-name, .achievements__card-description {
+  font-size: var(--font-size-24);
+  text-align: center;
+}
+
+.achievements__card-name {
+  padding: 24px 0px 32px 0px;
+  height: 29px;
+}
+
+.description {
+  line-height: 1.2;
+}
+
+.achievements__card-description {
+  min-height: 180px;
+}
+
+@media (max-width: 1024px) {
+  .about__title {
+    padding-left: 12px;
+  }
+
+  .achievements__card {
+    padding-left: 10px;
+  }
+}

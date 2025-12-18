@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoks</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/sass/css/css_home/header.css">
+    <link rel="stylesheet" href="/sass/css/css_stocks/special.css">
+    <link rel="stylesheet" href="/sass/css/css_stocks/stocks.css">
+    <link rel="stylesheet" href="/sass/css/css_stocks/stocks.css">
+    <link rel="stylesheet" href="/sass/css/css_home/footer.css">   
+    <link rel="stylesheet" href="/sass/css/css_home/popover_entrance.css">
+    <link rel="stylesheet" href="/sass/css/css_home/popover_reg.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/img/logo.png" alt="logo" class="header__logo">
+        <div class="header__nav">
+             <nav class="header__list__container"> <!--Навигация в шапке/Header navigation -->
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="header__link" href="home.html">Главная</a></li>
+                    <li class="header__list-item"><a class="header__link" href="services.html">Услуги</a></li>
+                    <li class="header__list-item"><a class="header__link" href="about.html">О нас</a></li>
+                    <li class="header__list-item"><a class="header__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__button">
+            <button class="header__button-element" popovertarget="popover_reg">войти</button>
+        </div>
+    </header>
+<!-- Основной контент страницы/Main page content -->
+    <main class="main">
+        <section class="special">
+            <div class="special__title">
+                <h1 class="title">СПЕЦПРЕДЛОЖЕНИЕ</h1>
+            </div>
+            <div class="special__dif">
+                <h3 class="special__dif-element">БЕСПЛАТНАЯ ДИАГНОСТИКА!</h3>
+            </div>
+            <div class="special__image">
+                <img src="/img/stoks__image.png" alt="special__offer" loading="lazy" class="special__offer">
+            </div>
+            <div class="stoks__description">
+                <p class="stoks__description-element">Для того чтобы принять участие необходимо подписаться на одну из наших соц.сетей ниже!</p>
+            </div>
+            <div class="socital__network">
+                <div class="network">
+                     <a href="https://vk.com/posadservice"><img src="/img/vk.svg" alt="vk" loading="lazy" class="network_vk"></a>
+                    <p class="network__name">VKontakte</p>
+                </div>
+                <div class="network">
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fposadservice%2F&is_from_rle"><img src="/img/inst.svg" alt="vk" loading="lazy" class="network_inst"></a>
+                    <p class="network__name">instagram</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Подвал/footer -->
+    <footer class="footer">
+        <div class="footer__details">
+            <div class="footer__details-element">
+                <p class="details-element">© 2025 ООО "Спецсервис".<br>Все права защищены.</p>
+            </div>
+            <div class="footer__nav">
+                <nav> <!--Навигация в подвале/Basement navigation-->
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="about.html" id="footer__list-titles">О компании</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">Что ремонтируем</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="contacts.html">Где находимся</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="about.html">Правила сайта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="services.html" id="footer__list-title">Продукция</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">замена стёкл</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">чистка от воды</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">ремонт запчастей</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Поповер регистрации/Registration popover -->
+    <div id="popover_reg" popover>
+        <div class="popover">
+            <div class="back">
+                <button class="hidden" popovertarget="popover_reg"><img src="/img/arrow.svg" alt="back" loading="lazy" class="back__arrow"></button>
+            </div>
+            <div class="popover__image">
+                <img src="/img/logo.png" alt="logo" loading="lazy" class="popover__image-element">
+            </div>
+            <div class="popover__title">
+                <h3 class="popover__title-element">Регистрация</h3>
+            </div>
+            <form id="popover__forms">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </label>
+                <label for="password">
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </label>
+                <div class="popover__buttone">
+                    <button type="submit" class="popover__button-element">Создать</button>
+                </div>
+            </form>
+            <div class="popover__choirse">
+                <button class="popover__choirs-elements" popovertarget="popover_entrance">есть аккаунт?</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Поповер входа/Еntrance popover -->
+    <div id="popover_entrance" popover>
+        <div class="popower">
+            <div class="back">
+                <button class="hidden" popovertarget="popover_entrance"><img src="/img/arrow.svg" alt="back" loading="lazy" class="back__arrow"></button>
+            </div>
+            <div class="popover__image">
+                <img src="/img/logo.png" alt="logo" loading="lazy" class="popover__image-element">
+            </div>
+            <div class="popover_title">
+                <h3 class="popover__title-element">заполните поля</h3>
+            </div>
+            <div class="popover__description">
+                <p class="popover__description-element">Чтобы войти в аккаунт</p>
+            </div>
+            <form id="popover__form">
+                <label for="emails">
+                    <input type="email" name="email" id="emails" placeholder="E-mail" required>
+                </label>
+                <label for="passwords">
+                    <input type="password" name="password" id="passwords" placeholder="password" required>
+                </label>
+                <div class="replacement__password">
+                    <p class="replacement__password-element">не помню пароль</p>
+                </div>
+                <div class="popover__button">
+                    <button type="submit" class="popover__buttons-element">продолжить</button>
+                </div>
+            </form>
+            <div class="popover__choirs">
+                <button class="popover__choirs-element" popovertarget="popover_reg">нет аккаунта?</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

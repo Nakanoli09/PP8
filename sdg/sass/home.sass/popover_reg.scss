@@ -1,0 +1,128 @@
+#popover_reg {
+  justify-self: center;
+  align-items: center;
+}
+
+.popover {
+  min-height: 460px;
+  width: 420px;
+  border-radius: 12px;
+  background-image: url(/img/popover__back.jpg);
+  background-size: cover;
+}
+
+.back {
+  display: flex;
+}
+
+.back__arrow {
+  position: absolute;
+  width: 52px;
+  left: 40px;
+  top: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.popover__image {
+  display: flex;
+  justify-self: center;
+  width: 290px;
+  height: 120px;
+  margin-top: 67px;
+}
+
+.popover__image-element {
+  width: 290px;
+}
+
+.popover__title {
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 36px;
+  height: 44px;
+  padding-top: 20px;
+}
+
+#popover__forms {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 16px;
+  padding-top: 12px;
+}
+
+input {
+  &::placeholder {
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  width: 200px;
+  height: 29px;
+  border-radius: 10px;
+  border: none;
+}
+
+.popover__buttone {
+  display: flex;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.popover__button-element {
+  width: 130px;
+  height: 53px;
+  background-color: #FF6767;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  box-shadow: 4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(129, 124, 124);
+    box-shadow: 4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+  }
+
+  &:active {
+    background-color: #FF6767;
+    box-shadow: 4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  }
+}
+
+.popover__choirse {
+  display: flex;
+  justify-content: center;
+  height: 29px;
+  padding-top: 20px;
+  margin-top: -8px;
+}
+
+.popover__choirs-elements {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+.hidden {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .popover {
+    width: 300px;
+  }
+}

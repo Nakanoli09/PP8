@@ -1,0 +1,111 @@
+.root {
+  --font-family:'Montserrat';
+  --font-size-20:20px;
+  --font-size-24:24px;
+  --font-size-32:32px;
+  --medium:400;
+  --samibold:600;
+  --line-height-24:24px;
+  --rear-color:#FF6767;
+  --button-text-color:#ffffff;
+  --radius-12:12px;
+  --rear-color-hover:rgb(129, 124, 124);
+  --rear-color-active:#FF6767;
+  --box-hover:4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+  --box-active:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+}
+
+.special {
+  margin-top: 169px;
+}
+
+.special__title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-32);
+  font-weight: var(--samibold);
+  height: 39px;
+  padding-top: 3px;
+}
+
+.special__image {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  height: 538px;
+}
+
+.special__offer {
+  width: 95vw;
+}
+
+.special__description {
+  display: flex;
+  justify-self: center;
+  padding-top: 92px;
+  max-width: 476px;
+  min-height: 72px;
+  font-family: var(--font-family);
+  font-weight: var(--medium);
+  font-size: var(--font-size-20);
+  text-align: center;
+  line-height: var(--font-size-24);
+}
+
+.special__button {
+  display: flex;
+  justify-content: center;
+  padding-top: 92px;
+}
+
+.special__button-element {
+  width: 228px;
+  height: 67px;
+  background-color: var(--rear-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-24);
+  font-weight: var(--medium);
+  color: var(--button-text-color);
+  border-radius: var(--radius-12);
+  border: none;
+  box-shadow: var(--box);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--rear-color-hover);
+    box-shadow: var(--box-hover);
+  }
+
+  &:active {
+    background-color: var(--rear-color-active);
+    box-shadow: var(--box-active);
+  }
+}
+
+@media (max-width: 1024px) {
+  .special__image, .special__description {
+    display: none;
+  }
+
+  .special {
+    margin-left: 12px;
+  }
+
+  .special__button {
+    padding-top: 88px;
+  }
+}
+
+@media (max-width: 800px) {
+  .special__title {
+    font-size: var(--font-size-20);
+    margin-top: -26px;
+  }
+
+  .special__button {
+    padding-top: 76px;
+  }
+}

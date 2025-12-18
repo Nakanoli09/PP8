@@ -1,0 +1,143 @@
+:root {
+  --font-family:'Montserrat';
+  --font-size-32:32px;
+  --font-size-24:24px;
+  --font-size-20:20px;
+  --medium:500;
+  --bold:700;
+  --beetween-30:30px;
+  --between-58:58px;
+  --button-text-color:#ffffff;
+  --radius-12:12px;
+  --box:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  --rear-color-hover:rgb(129, 124, 124);
+  --rear-color-active:#FF6767;
+  --box-hover:4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+  --box-active:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+}
+
+.services {
+  margin-top: 169px;
+}
+
+.product {
+  min-height: 427px;
+}
+
+.services__title {
+  font-family: var(--font-family);
+  font-weight: var(--bold);
+  font-size: var(--font-size-32);
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  height: 39px;
+}
+
+.service {
+  font-family: var(--font-family);
+  font-size: var(--font-size-24);
+  font-weight: var(--medium);
+  display: flex;
+  gap: var(--beetween-30);
+}
+
+.name__service {
+  width: 400px;
+  height: 29px;
+}
+
+.price {
+  width: 400px;
+  height: 29px;
+  text-align: center;
+}
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: var(--between-58);
+  margin-top: 58px;
+}
+
+.services__phone-element {
+  width: 228px;
+  height: 67px;
+  background-color: var(--rear-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-24);
+  color: var(--button-text-color);
+  border-radius: var(--radius-12);
+  border: none;
+  box-shadow: var(--box);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--rear-color-hover);
+    box-shadow: var(--box-hover);
+  }
+
+  &:active {
+    background-color: var(--rear-color-active);
+    box-shadow: var(--box-active);
+  }
+}
+
+.services__phone {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+}
+
+@media (max-width: 1024px) {
+  .services {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .name__service {
+    height: 29px;
+    text-align: center;
+  }
+
+  .price {
+    height: 29px;
+    text-align: center;
+    width: 150px;
+    height: 24px;
+  }
+
+  .services {
+    margin-left: 10px;
+  }
+
+  .name {
+    height: 24px;
+  }
+
+  .service {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: var(--font-size-20);
+    width: 280px;
+    height: 100px;
+    gap: 0px;
+  }
+
+  .services__container {
+    width: 280px;
+  }
+
+  #in_hell {
+    height: 48px;
+    line-height: 1.15;
+  }
+
+  #unreal {
+    margin-top: 50px;
+  }
+}

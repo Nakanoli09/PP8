@@ -1,0 +1,103 @@
+#popover_entrance {
+  justify-self: center;
+  align-items: center;
+}
+
+.popower {
+  min-height: 562px;
+  width: 420px;
+  border-radius: 12px;
+  background-image: url(/img/popover__back.jpg);
+  background-size: cover;
+}
+
+.popover_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.popover__description {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 24px;
+}
+
+#popover__form {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-self: center;
+}
+
+.replacement__password {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: #8EA5EB;
+}
+
+.popover__button {
+  margin-top: 0px;
+}
+
+.popover__buttons-element {
+  width: 200px;
+  height: 43px;
+  background-color: #FF6767;
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  box-shadow: 4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popover__button-element:hover {
+  background-color: rgb(129, 124, 124);
+  box-shadow: 4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+}
+.popover__button-element:active {
+  background-color: #FF6767;
+  box-shadow: 4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+}
+
+.popover__button {
+  display: flex;
+  justify-content: center;
+}
+
+.popover__choirs-element {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popover__choirs {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .popower {
+    width: 300px;
+  }
+  .popover_title, .popover__description {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=popover_entrance.css.map */
