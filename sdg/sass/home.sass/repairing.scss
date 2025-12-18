@@ -1,0 +1,246 @@
+:root {
+  --font-family:'Montserrat';
+  --sami-bold:600;
+  --bold:700;
+  --medium:400;
+  --font-size-20:20px;
+  --font-size-24:24px;
+  --font-size-32:32px;
+  --rear-color:#FF6767;
+  --button-text-color:#ffffff;
+  --radius-12:12px;
+  --rear-color-hover:rgb(129, 124, 124);
+  --rear-color-active:#FF6767;
+  --line-height-1-1:1.1;
+  --box-hover:4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+  --box-active:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  --between-104:104px;
+}
+
+.main {
+  margin-top: 169px;
+}
+
+.stocks {
+  margin-top: 169px;
+  min-height: 878px;
+}
+
+.repairing__title, .stocks__name {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-32);
+  font-weight: var(--sami-bold);
+  height: 39px;
+  text-align: center;
+  position: relative;
+  top: 2px;
+}
+
+.repairing__card {
+  display: flex;
+  justify-content: center;
+  gap: var(--between-104);
+  padding-top: 92px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.stocks__card {
+  display: flex;
+  justify-content: center;
+  gap: var(--between-104);
+  padding-top: 92px;
+  min-height: 472px;
+  flex-wrap: wrap;
+}
+
+.card-element {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  height: 299px;
+  border-radius: var(--radius-12);
+}
+
+.card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  height: 408px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image {
+  height: 256px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.images:hover {
+  transform: scale(1.1);
+}
+
+.card__name {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-20);
+  font-weight: var(--bold);
+  height: 24px;
+  padding-top: 19px;
+  text-align: center;
+}
+
+.repairing__button, .stocks__button {
+  display: flex;
+  justify-content: center;
+  padding-top: 92px;
+}
+
+.repairing__button-element {
+  width: 228px;
+  height: 67px;
+  background-color: var(--rear-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-20);
+  font-weight: var(--bold);
+  color: var(--button-text-color);
+  border-radius: var(--radius-12);
+  border: none;
+  box-shadow: var(--box);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.stocks__button-element {
+  width: 228px;
+  height: 67px;
+  background-color: var(--rear-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-24);
+  font-weight: var(--bold);
+  color: var(--button-text-color);
+  border-radius: var(--radius-12);
+  border: none;
+  box-shadow: var(--box);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--rear-color-hover);
+    box-shadow: var(--box-hover);
+  }
+}
+
+.repairing__button-element:hover {
+  background-color: var(--rear-color-hover);
+  box-shadow: var(--box-hover);
+}
+
+.stocks__button-element:active, .repairing__button-element:active {
+  background-color: var(--rear-color-active);
+  box-shadow: var(--box-active);
+}
+
+@media (max-width: 1024px) {
+  .repairing__title {
+    padding: 2px 0px 0px 14px;
+  }
+
+  .repairing__card, .repairing__button, .stocks__name {
+    padding-left: 15px;
+  }
+
+  .stocks {
+    min-height: 1414px;
+  }
+
+  .stocks__card {
+    height: 1062px;
+    padding-left: 15px;
+    gap: 104px;
+  }
+
+  .stocks {
+    height: 1460px;
+  }
+
+  #ide {
+    margin-top: -10px;
+  }
+
+  .images {
+    width: 282px;
+  }
+
+  .stocks__button {
+    padding-left: 15px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .repairing__title, .stocks__name {
+    font-size: var(--font-size-20);
+  }
+
+  .repairing__card {
+    padding-top: 80px;
+  }
+
+  .stocks {
+    height: 1953PX;
+  }
+
+  .stocks__card {
+    padding-top: 78px;
+    height: 1562px;
+    gap: 104px;
+  }
+
+  .images {
+    height: 388px;
+  }
+
+  .curl {
+    margin-top: -5px;
+  }
+
+  .curls {
+    padding-top: -20px;
+  }
+
+  .curle {
+    margin-top: -10px;
+  }
+
+  #ide {
+    margin-top: -40px;
+  }
+
+  .stocks__button {
+    margin-top: -26px;
+  }
+
+  #culse {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 340px) {
+  .image:hover, .images:hover {
+    transform: scale(1);
+  }
+}

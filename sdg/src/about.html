@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/sass/css/css_home/header.css">
+    <link rel="stylesheet" href="/sass/css/css_about/achivements.css">
+    <link rel="stylesheet" href="/sass/css/css_about/general.css">
+    <link rel="stylesheet" href="/sass/css/css_home/footer.css">
+    <link rel="stylesheet" href="/sass/css/css_home/popover_entrance.css">
+    <link rel="stylesheet" href="/sass/css/css_home/popover_reg.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/img/logo.png" alt="logo" class="header__logo">
+        <div class="header__nav">
+             <nav class="header__list__container"> <!--Навигация в шапке/Header navigation -->
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="header__link" href="home.html">Главная</a></li>
+                    <li class="header__list-item"><a class="header__link" href="services.html">Услуги</a></li>
+                    <li class="header__list-item"><a class="header__link" href="about.html">О нас</a></li>
+                    <li class="header__list-item"><a class="header__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__button">
+            <button class="header__button-element" popovertarget="popover_reg">войти</button>
+        </div>
+    </header>
+<!-- Основной контент страницы/Main page content -->
+    <main class="main">
+        <div class="about__title">
+            <h1 class="about__title-element">ПОЧЕМУ ИМЕННО МЫ</h1>
+        </div>
+        <section class="achievements">
+            <div class="achievements__card">
+                <div class="achievements__card-image">
+                    <img src="/img/about__card-image2.svg" alt="achievement-image" loading="lazy" class="achievement-image">
+                </div>
+                <div class="achievements__card-name">
+                    <h3 class="name">Опытные работники</h3>
+                </div>
+                <div class="achievements__card-description">
+                    <p class="description">Наши сотрудники выполняют всю работу качественно, уже на протяжении 10 лет!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="general">
+            <div class="general__description">
+                <h3 class="general__description-element">Наш сервис – один из самых старых и опытных сервисных центров по ремонту телефонов и прочей портативной техники в городе Сергиев Посад!</h3>
+            </div>
+            <div class="general__description" id="none_1024">
+                <h3 class="general__description-element">Наш секрет в том, что в нашем сервисе работают лучшие профессионалы своего дела! Именно поэтому мы уже более 10 лет делаем качественные и недорогой ремонт для Вас!</h3>
+            </div>
+            <div class="general__description">
+                <h3 class="general__description-element">Мы начали ремонтировать ноутбуки, телефоны и прочую технику  10 лет назад. Наш сервис взрослел вместе с  индустрией и набирался с каждым годом все большего опыта. 
+Мы ремонтируем все! Начиная с мобильных телефонов и планшетов  до стационарных компьютеров и телевизоров !</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал/footer -->
+    <footer class="footer">
+        <div class="footer__details">
+            <div class="footer__details-element">
+                <p class="details-element">© 2025 ООО "Спецсервис".<br>Все права защищены.</p>
+            </div>
+            <div class="footer__nav">
+                <nav> <!--Навигация в подвале/Basement navigation-->
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="about" id="footer__list-titles">О компании</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">Что ремонтируем</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="contacts.html">Где находимся</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="about.html">Правила сайта</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="services.html" id="footer__list-title">Продукция</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">замена стёкл</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">чистка от воды</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="services.html">ремонт запчастей</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Поповер регистрации/Registration popover -->
+    <div id="popover_reg" popover>
+        <div class="popover">
+            <div class="back">
+                <button class="hidden" popovertarget="popover_reg"><img src="/img/arrow.svg" alt="back" loading="lazy" class="back__arrow"></button>
+            </div>
+            <div class="popover__image">
+                <img src="/img/logo.png" alt="logo" loading="lazy" class="popover__image-element">
+            </div>
+            <div class="popover__title">
+                <h3 class="popover__title-element">Регистрация</h3>
+            </div>
+            <form id="popover__forms">
+                <label for="emails">
+                    <input type="email" name="user_email" id="emails" placeholder="E-mail" required>
+                </label>
+                <label for="passwords">
+                    <input type="password" name="user_password" id="passwords" placeholder="password" required>
+                </label>
+                <div class="popover__buttone">
+                    <button type="submit" class="popover__button-element">Создать</button>
+                </div>
+            </form>
+            <div class="popover__choirse">
+                <button class="popover__choirs-elements" popovertarget="popover_entrance">есть аккаунт?</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Поповер входа/Еntrance popover -->
+    <div id="popover_entrance" popover>
+        <div class="popower">
+            <div class="back">
+                <button class="hidden" popovertarget="popover_entrance"><img src="/img/arrow.svg" alt="back" loading="lazy" class="back__arrow"></button>
+            </div>
+            <div class="popover__image">
+                <img src="/img/logo.png" alt="logo" loading="lazy" class="popover__image-element">
+            </div>
+            <div class="popover_title">
+                <h3 class="popover__title-element">заполните поля</h3>
+            </div>
+            <div class="popover__description">
+                <p class="popover__description-element">Чтобы войти в аккаунт</p>
+            </div>
+            <form id="popover__form">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </label>
+                <label for="password">
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </label>
+                <div class="replacement__password">
+                    <p class="replacement__password-element">не помню пароль</p>
+                </div>
+                <div class="popover__button">
+                    <button type="submit" class="popover__buttons-element">продолжить</button>
+                </div>
+            </form>
+            <div class="popover__choirs">
+                <button class="popover__choirs-element" popovertarget="popover_reg">нет аккаунта?</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

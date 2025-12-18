@@ -1,0 +1,122 @@
+:root {
+  --font-family:'Montserrat';
+  --medium:400;
+  --font-size-24:24px;
+  --between-80:80px;
+  --between-64:64px;
+  --rear-color:#FF6767;
+  --button-text-color:#ffffff;
+  --radius-12:12px;
+  --box:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+  --list-hover:#FFAD65;
+  --rear-color-hover:rgb(129, 124, 124);
+  --rear-color-active:#FF6767;
+  --box-hover:4px 4px 10px 2px rgba(129, 124, 124, 0.2), -4px -4px 10px 2px rgba(129, 124, 124, 0.2);
+  --box-active:4px 4px 10px 2px rgba(239, 21, 21, 0.2), -4px -4px 10px 2px rgba(239, 21, 21, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: var(--medium);
+  font-size: var(--font-size-24);
+  gap: var(--between-64);
+  min-height: 106px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.header__list {
+  display: flex;
+  gap: var(--between-80);
+  width: 680px;
+  justify-content: center;
+}
+
+.header__list-item {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--list-hover);
+  }
+}
+
+.header__button-element {
+  width: 130px;
+  height: 53px;
+  background-color: var(--rear-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-24);
+  color: var(--button-text-color);
+  border-radius: var(--radius-12);
+  border: none;
+  box-shadow: var(--box);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--rear-color-hover);
+    box-shadow: var(--box-hover);
+  }
+
+  &:active {
+    background-color: var(--rear-color-active);
+    box-shadow: var(--box-active);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .header__nav {
+    width: 784px;
+    flex-wrap: wrap;
+    margin-top: 2px;
+  }
+
+  .header__list__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__button {
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-wrap: wrap;
+    justify-self: center;
+  }
+
+  .header__list {
+    flex-wrap: wrap;
+    max-width: 230px;
+  }
+
+  .header__list-item {
+    height: 29px;
+  }
+
+  .header__button {
+    margin-top: -6px;
+  }
+
+  .header__nav {
+    width: auto;
+  }
+}
+
+@media (max-width: 321px) {
+  .header__nav {
+    width: auto;
+  }
+}

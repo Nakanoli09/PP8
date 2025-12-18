@@ -1,0 +1,40 @@
+:root {
+  --font-family:'Montserrat';
+  --font-size-24:24px;
+  --medium:500;
+  --beetween-100:100px;
+}
+
+.general {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 169px;
+  gap: var(--beetween-100);
+}
+
+.general__description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
+  font-size: var(--font-size-24);
+  font-weight: var(--medium);
+  min-height: 146px;
+  line-height: 1.2;
+}
+
+@media (max-width: 1024px) {
+  .general {
+    height: 457px;
+  }
+
+  .general__description {
+    max-width: 854px;
+    margin-left: 12px;
+  }
+
+  #none_1024 {
+    display: none;
+  }
+}
