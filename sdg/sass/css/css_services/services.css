@@ -59,7 +59,6 @@
   display: flex;
   justify-content: center;
   margin-top: 55px;
-  margin-left: -10px;
 }
 
 .service__button-element {
@@ -88,6 +87,10 @@
 @media (max-width: 1024px) {
   .services {
     margin-left: 8px;
+    
+  }
+  .service__button{
+    padding-left: 10px;
   }
 }
 @media (max-width: 860px) {
@@ -107,5 +110,6 @@
   }
   .service__button {
     margin-left: -2px;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=services.css.map */
